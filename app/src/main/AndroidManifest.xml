@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.exemple.carpierschmidt.promob_jeu">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Pro_Mob_Jeu"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mode"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".multi" />
+        <activity
+            android:name=".solo_question"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".solo_touch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".solo_gagne"
+            android:parentActivityName=".solo_menu"
+            android:screenOrientation="portrait">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".solo_menu" />
+        </activity>
+        <activity
+            android:name=".solo_menu"
+            android:parentActivityName=".Mode"
+            android:screenOrientation="portrait">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".solo_geste"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".multi_menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".solo_geste_2"
+            android:screenOrientation="portrait" />
+        <activity android:name=".solo_touch_2" />
+        <activity
+            android:name=".solo_question_2"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Splash_screen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ProMob_Jeu</string>
+    <string name="Play">Jouer</string>
+    <string name="Single_player">Solo</string>
+    <string name="Multi_player">Multi</string>
+    <string name="Answer">Réponse</string>
+    <string name="good_answers">Bonnes réponses :</string>
+    <string name="send_button">Send</string>
+</resources>
